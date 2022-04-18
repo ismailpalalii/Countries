@@ -17,6 +17,8 @@
 		179CCDB0280E0EC30007CF9A /* CountryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDAF280E0EC30007CF9A /* CountryListModel.swift */; };
 		179CCDB2280E0EF10007CF9A /* CountryListDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDB1280E0EF10007CF9A /* CountryListDetailModel.swift */; };
 		179CCDB5280E0FC00007CF9A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 179CCDB4280E0FC00007CF9A /* Alamofire */; };
+		179CCDB8280E10360007CF9A /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDB7280E10360007CF9A /* API.swift */; };
+		179CCDBA280E11650007CF9A /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDB9280E11650007CF9A /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		179CCDA7280E0CD80007CF9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		179CCDAF280E0EC30007CF9A /* CountryListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListModel.swift; sourceTree = "<group>"; };
 		179CCDB1280E0EF10007CF9A /* CountryListDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListDetailModel.swift; sourceTree = "<group>"; };
+		179CCDB7280E10360007CF9A /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		179CCDB9280E11650007CF9A /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		179CCD95280E0CD40007CF9A /* Countries */ = {
 			isa = PBXGroup;
 			children = (
+				179CCDB6280E10090007CF9A /* Service */,
 				179CCDAE280E0E630007CF9A /* Model */,
 				179CCDAD280E0E230007CF9A /* Resources */,
 				179CCD9C280E0CD40007CF9A /* Main.storyboard */,
@@ -90,8 +95,17 @@
 			children = (
 				179CCDAF280E0EC30007CF9A /* CountryListModel.swift */,
 				179CCDB1280E0EF10007CF9A /* CountryListDetailModel.swift */,
+				179CCDB9280E11650007CF9A /* Country.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		179CCDB6280E10090007CF9A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				179CCDB7280E10360007CF9A /* API.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +189,10 @@
 				179CCDB0280E0EC30007CF9A /* CountryListModel.swift in Sources */,
 				179CCD97280E0CD40007CF9A /* AppDelegate.swift in Sources */,
 				179CCDA1280E0CD40007CF9A /* Countries.xcdatamodeld in Sources */,
+				179CCDBA280E11650007CF9A /* Country.swift in Sources */,
 				179CCD99280E0CD40007CF9A /* SceneDelegate.swift in Sources */,
 				179CCDB2280E0EF10007CF9A /* CountryListDetailModel.swift in Sources */,
+				179CCDB8280E10360007CF9A /* API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
