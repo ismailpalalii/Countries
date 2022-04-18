@@ -15,7 +15,7 @@ private let headers: HTTPHeaders = [
 private let baseUrl = "https://wft-geo-db.p.rapidapi.com/v1/geo/countries"
 
 class API{
-    static func fetchCountries(completionHandler: @escaping ([Country]) -> Void) {
+    static func fetchCountryList(completionHandler: @escaping ([Country]) -> Void) {
         
         let url = "\(baseUrl)?limit=10"
         var countries = [Country]()
@@ -30,7 +30,7 @@ class API{
         }
     }
     
-    static func fetchCountry(code: String, completionHandler: @escaping (CountryListDetailModel) -> Void) {
+    static func fetchCountryDetail(code: String, completionHandler: @escaping (CountryListDetailModel) -> Void) {
         
         let url = "\(baseUrl)/\(code)"
         

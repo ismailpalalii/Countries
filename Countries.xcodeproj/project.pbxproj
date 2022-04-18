@@ -23,7 +23,10 @@
 		179CCDBF280E13B70007CF9A /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDBE280E13B70007CF9A /* SavedViewController.swift */; };
 		179CCDC3280E16DD0007CF9A /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDC1280E16DD0007CF9A /* HomeTableViewCell.swift */; };
 		179CCDC4280E16DD0007CF9A /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 179CCDC2280E16DD0007CF9A /* HomeTableViewCell.xib */; };
-		179CCDC7280E19A00007CF9A /* UIViewBorder+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDC6280E19A00007CF9A /* UIViewBorder+.swift */; };
+		179CCDC7280E19A00007CF9A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDC6280E19A00007CF9A /* UIView+Extensions.swift */; };
+		179CCDCA280E1D1F0007CF9A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDC9280E1D1F0007CF9A /* HomeViewModel.swift */; };
+		179CCDCC280E2FCD0007CF9A /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDCB280E2FCD0007CF9A /* UITableViewCell+Extensions.swift */; };
+		179CCDCE280E2FF10007CF9A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDCD280E2FF10007CF9A /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +47,10 @@
 		179CCDBE280E13B70007CF9A /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
 		179CCDC1280E16DD0007CF9A /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		179CCDC2280E16DD0007CF9A /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
-		179CCDC6280E19A00007CF9A /* UIViewBorder+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewBorder+.swift"; sourceTree = "<group>"; };
+		179CCDC6280E19A00007CF9A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		179CCDC9280E1D1F0007CF9A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		179CCDCB280E2FCD0007CF9A /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		179CCDCD280E2FF10007CF9A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 		179CCD95280E0CD40007CF9A /* Countries */ = {
 			isa = PBXGroup;
 			children = (
+				179CCDC8280E1CF40007CF9A /* ViewModel */,
 				179CCDC5280E19780007CF9A /* Extension */,
 				179CCDBB280E138A0007CF9A /* View */,
 				179CCDB6280E10090007CF9A /* Service */,
@@ -142,9 +149,19 @@
 		179CCDC5280E19780007CF9A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				179CCDC6280E19A00007CF9A /* UIViewBorder+.swift */,
+				179CCDC6280E19A00007CF9A /* UIView+Extensions.swift */,
+				179CCDCB280E2FCD0007CF9A /* UITableViewCell+Extensions.swift */,
+				179CCDCD280E2FF10007CF9A /* UIViewController+Extensions.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		179CCDC8280E1CF40007CF9A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				179CCDC9280E1D1F0007CF9A /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,10 +246,13 @@
 				179CCDB0280E0EC30007CF9A /* CountryListModel.swift in Sources */,
 				179CCD97280E0CD40007CF9A /* AppDelegate.swift in Sources */,
 				179CCDA1280E0CD40007CF9A /* Countries.xcdatamodeld in Sources */,
-				179CCDC7280E19A00007CF9A /* UIViewBorder+.swift in Sources */,
+				179CCDCC280E2FCD0007CF9A /* UITableViewCell+Extensions.swift in Sources */,
+				179CCDC7280E19A00007CF9A /* UIView+Extensions.swift in Sources */,
 				179CCDBA280E11650007CF9A /* Country.swift in Sources */,
+				179CCDCE280E2FF10007CF9A /* UIViewController+Extensions.swift in Sources */,
 				179CCDC3280E16DD0007CF9A /* HomeTableViewCell.swift in Sources */,
 				179CCDBD280E13A70007CF9A /* HomeViewController.swift in Sources */,
+				179CCDCA280E1D1F0007CF9A /* HomeViewModel.swift in Sources */,
 				179CCD99280E0CD40007CF9A /* SceneDelegate.swift in Sources */,
 				179CCDB2280E0EF10007CF9A /* CountryListDetailModel.swift in Sources */,
 				179CCDBF280E13B70007CF9A /* SavedViewController.swift in Sources */,

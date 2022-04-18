@@ -10,6 +10,7 @@ import UIKit
 class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var view: UIView!
     @IBOutlet weak var countryName: UILabel!
+    @IBOutlet weak var saveImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,6 +24,5 @@ class HomeTableViewCell: UITableViewCell {
     }
     
   
-    @IBAction func saveButtonTapped(_ sender: UIButton) {
-    }
+    
 }
