@@ -21,6 +21,9 @@
 		179CCDBA280E11650007CF9A /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDB9280E11650007CF9A /* Country.swift */; };
 		179CCDBD280E13A70007CF9A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDBC280E13A70007CF9A /* HomeViewController.swift */; };
 		179CCDBF280E13B70007CF9A /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDBE280E13B70007CF9A /* SavedViewController.swift */; };
+		179CCDC3280E16DD0007CF9A /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDC1280E16DD0007CF9A /* HomeTableViewCell.swift */; };
+		179CCDC4280E16DD0007CF9A /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 179CCDC2280E16DD0007CF9A /* HomeTableViewCell.xib */; };
+		179CCDC7280E19A00007CF9A /* UIViewBorder+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDC6280E19A00007CF9A /* UIViewBorder+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		179CCDB9280E11650007CF9A /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		179CCDBC280E13A70007CF9A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		179CCDBE280E13B70007CF9A /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		179CCDC1280E16DD0007CF9A /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		179CCDC2280E16DD0007CF9A /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		179CCDC6280E19A00007CF9A /* UIViewBorder+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewBorder+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 		179CCD95280E0CD40007CF9A /* Countries */ = {
 			isa = PBXGroup;
 			children = (
+				179CCDC5280E19780007CF9A /* Extension */,
 				179CCDBB280E138A0007CF9A /* View */,
 				179CCDB6280E10090007CF9A /* Service */,
 				179CCDAE280E0E630007CF9A /* Model */,
@@ -116,10 +123,28 @@
 		179CCDBB280E138A0007CF9A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				179CCDC0280E16BD0007CF9A /* Cell */,
 				179CCDBC280E13A70007CF9A /* HomeViewController.swift */,
 				179CCDBE280E13B70007CF9A /* SavedViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		179CCDC0280E16BD0007CF9A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				179CCDC1280E16DD0007CF9A /* HomeTableViewCell.swift */,
+				179CCDC2280E16DD0007CF9A /* HomeTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		179CCDC5280E19780007CF9A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				179CCDC6280E19A00007CF9A /* UIViewBorder+.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +213,7 @@
 			files = (
 				179CCDA6280E0CD80007CF9A /* LaunchScreen.storyboard in Resources */,
 				179CCDA3280E0CD80007CF9A /* Assets.xcassets in Resources */,
+				179CCDC4280E16DD0007CF9A /* HomeTableViewCell.xib in Resources */,
 				179CCD9E280E0CD40007CF9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,7 +229,9 @@
 				179CCDB0280E0EC30007CF9A /* CountryListModel.swift in Sources */,
 				179CCD97280E0CD40007CF9A /* AppDelegate.swift in Sources */,
 				179CCDA1280E0CD40007CF9A /* Countries.xcdatamodeld in Sources */,
+				179CCDC7280E19A00007CF9A /* UIViewBorder+.swift in Sources */,
 				179CCDBA280E11650007CF9A /* Country.swift in Sources */,
+				179CCDC3280E16DD0007CF9A /* HomeTableViewCell.swift in Sources */,
 				179CCDBD280E13A70007CF9A /* HomeViewController.swift in Sources */,
 				179CCD99280E0CD40007CF9A /* SceneDelegate.swift in Sources */,
 				179CCDB2280E0EF10007CF9A /* CountryListDetailModel.swift in Sources */,
