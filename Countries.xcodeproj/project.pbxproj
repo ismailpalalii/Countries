@@ -16,6 +16,7 @@
 		179CCDA6280E0CD80007CF9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179CCDA4280E0CD80007CF9A /* LaunchScreen.storyboard */; };
 		179CCDB0280E0EC30007CF9A /* CountryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDAF280E0EC30007CF9A /* CountryListModel.swift */; };
 		179CCDB2280E0EF10007CF9A /* CountryListDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDB1280E0EF10007CF9A /* CountryListDetailModel.swift */; };
+		179CCDB5280E0FC00007CF9A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 179CCDB4280E0FC00007CF9A /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				179CCDB5280E0FC00007CF9A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +110,9 @@
 			dependencies = (
 			);
 			name = Countries;
+			packageProductDependencies = (
+				179CCDB4280E0FC00007CF9A /* Alamofire */,
+			);
 			productName = Countries;
 			productReference = 179CCD93280E0CD40007CF9A /* Countries.app */;
 			productType = "com.apple.product-type.application";
@@ -136,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 179CCD8A280E0CD40007CF9A;
+			packageReferences = (
+				179CCDB3280E0FC00007CF9A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 179CCD94280E0CD40007CF9A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -388,6 +396,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		179CCDB3280E0FC00007CF9A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		179CCDB4280E0FC00007CF9A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 179CCDB3280E0FC00007CF9A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		179CCD9F280E0CD40007CF9A /* Countries.xcdatamodeld */ = {
