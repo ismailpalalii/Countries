@@ -40,5 +40,18 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.homeListViewModel == nil ? 0 : self.homeListViewModel.numberOfRowsInSection()
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = DetailViewViewController()
+        
+        let countryVM = self.homeListViewModel.cellForRowAt(indexPath.row)
+        detailVC.title = countryVM.name
+        detailVC.selectCountryCode = countryVM.code
+        
+        let navVC = UINavigationController(rootViewController: detailVC)
+        navVC.modalPresentationStyle = .fullScreen
+        present(navVC, animated: true, completion: nil)
+        
+    }
 
 }

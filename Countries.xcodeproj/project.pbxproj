@@ -27,6 +27,12 @@
 		179CCDCA280E1D1F0007CF9A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDC9280E1D1F0007CF9A /* HomeViewModel.swift */; };
 		179CCDCC280E2FCD0007CF9A /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDCB280E2FCD0007CF9A /* UITableViewCell+Extensions.swift */; };
 		179CCDCE280E2FF10007CF9A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDCD280E2FF10007CF9A /* UIViewController+Extensions.swift */; };
+		179CCDD1280E31D90007CF9A /* DetailViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDCF280E31D90007CF9A /* DetailViewViewController.swift */; };
+		179CCDD2280E31D90007CF9A /* DetailViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 179CCDD0280E31D90007CF9A /* DetailViewViewController.xib */; };
+		179CCDD5280E354A0007CF9A /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDD4280E354A0007CF9A /* DetailViewModel.swift */; };
+		179CCDD8280E38980007CF9A /* SVGKit in Frameworks */ = {isa = PBXBuildFile; productRef = 179CCDD7280E38980007CF9A /* SVGKit */; };
+		179CCDDA280E38980007CF9A /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 179CCDD9280E38980007CF9A /* SVGKitSwift */; };
+		179CCDDC280E38D90007CF9A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDDB280E38D90007CF9A /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +57,10 @@
 		179CCDC9280E1D1F0007CF9A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		179CCDCB280E2FCD0007CF9A /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		179CCDCD280E2FF10007CF9A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		179CCDCF280E31D90007CF9A /* DetailViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewViewController.swift; sourceTree = "<group>"; };
+		179CCDD0280E31D90007CF9A /* DetailViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewViewController.xib; sourceTree = "<group>"; };
+		179CCDD4280E354A0007CF9A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		179CCDDB280E38D90007CF9A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				179CCDDA280E38980007CF9A /* SVGKitSwift in Frameworks */,
+				179CCDD8280E38980007CF9A /* SVGKit in Frameworks */,
 				179CCDB5280E0FC00007CF9A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -130,6 +142,7 @@
 		179CCDBB280E138A0007CF9A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				179CCDD3280E31E10007CF9A /* DetailView */,
 				179CCDC0280E16BD0007CF9A /* Cell */,
 				179CCDBC280E13A70007CF9A /* HomeViewController.swift */,
 				179CCDBE280E13B70007CF9A /* SavedViewController.swift */,
@@ -152,6 +165,7 @@
 				179CCDC6280E19A00007CF9A /* UIView+Extensions.swift */,
 				179CCDCB280E2FCD0007CF9A /* UITableViewCell+Extensions.swift */,
 				179CCDCD280E2FF10007CF9A /* UIViewController+Extensions.swift */,
+				179CCDDB280E38D90007CF9A /* UIImageView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -160,8 +174,18 @@
 			isa = PBXGroup;
 			children = (
 				179CCDC9280E1D1F0007CF9A /* HomeViewModel.swift */,
+				179CCDD4280E354A0007CF9A /* DetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		179CCDD3280E31E10007CF9A /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				179CCDCF280E31D90007CF9A /* DetailViewViewController.swift */,
+				179CCDD0280E31D90007CF9A /* DetailViewViewController.xib */,
+			);
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +206,8 @@
 			name = Countries;
 			packageProductDependencies = (
 				179CCDB4280E0FC00007CF9A /* Alamofire */,
+				179CCDD7280E38980007CF9A /* SVGKit */,
+				179CCDD9280E38980007CF9A /* SVGKitSwift */,
 			);
 			productName = Countries;
 			productReference = 179CCD93280E0CD40007CF9A /* Countries.app */;
@@ -213,6 +239,7 @@
 			mainGroup = 179CCD8A280E0CD40007CF9A;
 			packageReferences = (
 				179CCDB3280E0FC00007CF9A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				179CCDD6280E38980007CF9A /* XCRemoteSwiftPackageReference "SVGKit" */,
 			);
 			productRefGroup = 179CCD94280E0CD40007CF9A /* Products */;
 			projectDirPath = "";
@@ -228,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				179CCDD2280E31D90007CF9A /* DetailViewViewController.xib in Resources */,
 				179CCDA6280E0CD80007CF9A /* LaunchScreen.storyboard in Resources */,
 				179CCDA3280E0CD80007CF9A /* Assets.xcassets in Resources */,
 				179CCDC4280E16DD0007CF9A /* HomeTableViewCell.xib in Resources */,
@@ -242,16 +270,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				179CCDD5280E354A0007CF9A /* DetailViewModel.swift in Sources */,
 				179CCD9B280E0CD40007CF9A /* ViewController.swift in Sources */,
 				179CCDB0280E0EC30007CF9A /* CountryListModel.swift in Sources */,
 				179CCD97280E0CD40007CF9A /* AppDelegate.swift in Sources */,
 				179CCDA1280E0CD40007CF9A /* Countries.xcdatamodeld in Sources */,
 				179CCDCC280E2FCD0007CF9A /* UITableViewCell+Extensions.swift in Sources */,
 				179CCDC7280E19A00007CF9A /* UIView+Extensions.swift in Sources */,
+				179CCDD1280E31D90007CF9A /* DetailViewViewController.swift in Sources */,
 				179CCDBA280E11650007CF9A /* Country.swift in Sources */,
 				179CCDCE280E2FF10007CF9A /* UIViewController+Extensions.swift in Sources */,
 				179CCDC3280E16DD0007CF9A /* HomeTableViewCell.swift in Sources */,
 				179CCDBD280E13A70007CF9A /* HomeViewController.swift in Sources */,
+				179CCDDC280E38D90007CF9A /* UIImageView+Extension.swift in Sources */,
 				179CCDCA280E1D1F0007CF9A /* HomeViewModel.swift in Sources */,
 				179CCD99280E0CD40007CF9A /* SceneDelegate.swift in Sources */,
 				179CCDB2280E0EF10007CF9A /* CountryListDetailModel.swift in Sources */,
@@ -486,6 +517,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		179CCDD6280E38980007CF9A /* XCRemoteSwiftPackageReference "SVGKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SVGKit/SVGKit.git";
+			requirement = {
+				branch = 3.x;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -493,6 +532,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 179CCDB3280E0FC00007CF9A /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		179CCDD7280E38980007CF9A /* SVGKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 179CCDD6280E38980007CF9A /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKit;
+		};
+		179CCDD9280E38980007CF9A /* SVGKitSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 179CCDD6280E38980007CF9A /* XCRemoteSwiftPackageReference "SVGKit" */;
+			productName = SVGKitSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 
