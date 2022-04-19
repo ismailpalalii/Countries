@@ -12,7 +12,7 @@ The api key was specifically left inside the project.
 
 
 # Installation
-I used spm in this project.
+- I used spm in this project.
 
 - SVGKit were used to render the incoming image for the flag.
 - Used Alamofire for APICalls.
