@@ -11,6 +11,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     @IBOutlet weak var tableView: UITableView!
     private var homeListViewModel : HomeListViewModel!
+    private var countries = [Country]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +52,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         let navVC = UINavigationController(rootViewController: detailVC)
         navVC.modalPresentationStyle = .fullScreen
         present(navVC, animated: true, completion: nil)
+        
         
     }
 

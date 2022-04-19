@@ -17,7 +17,6 @@ class DetailViewViewController: UIViewController {
         getUI()
         getDetail()
         backButton()
-        savedButton()
         // Do any additional setup after loading the view.
     }
 
@@ -28,10 +27,6 @@ class DetailViewViewController: UIViewController {
     
     func backButton() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "arrow.left"), style: .done, target: self, action: #selector(backHomeVC))
-    }
-    
-    func savedButton() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "star.fill"), style: .done, target: self, action: #selector(backHomeVC))
     }
     
     @objc func backHomeVC() {

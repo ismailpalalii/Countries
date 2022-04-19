@@ -11,7 +11,6 @@
 		179CCD99280E0CD40007CF9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCD98280E0CD40007CF9A /* SceneDelegate.swift */; };
 		179CCD9B280E0CD40007CF9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCD9A280E0CD40007CF9A /* ViewController.swift */; };
 		179CCD9E280E0CD40007CF9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179CCD9C280E0CD40007CF9A /* Main.storyboard */; };
-		179CCDA1280E0CD40007CF9A /* Countries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 179CCD9F280E0CD40007CF9A /* Countries.xcdatamodeld */; };
 		179CCDA3280E0CD80007CF9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 179CCDA2280E0CD80007CF9A /* Assets.xcassets */; };
 		179CCDA6280E0CD80007CF9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179CCDA4280E0CD80007CF9A /* LaunchScreen.storyboard */; };
 		179CCDB0280E0EC30007CF9A /* CountryListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDAF280E0EC30007CF9A /* CountryListModel.swift */; };
@@ -33,6 +32,7 @@
 		179CCDD8280E38980007CF9A /* SVGKit in Frameworks */ = {isa = PBXBuildFile; productRef = 179CCDD7280E38980007CF9A /* SVGKit */; };
 		179CCDDA280E38980007CF9A /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 179CCDD9280E38980007CF9A /* SVGKitSwift */; };
 		179CCDDC280E38D90007CF9A /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDDB280E38D90007CF9A /* UIImageView+Extension.swift */; };
+		179CCDEF280E42FB0007CF9A /* List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 179CCDED280E42FB0007CF9A /* List.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,6 @@
 		179CCD98280E0CD40007CF9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		179CCD9A280E0CD40007CF9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		179CCD9D280E0CD40007CF9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		179CCDA0280E0CD40007CF9A /* Countries.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Countries.xcdatamodel; sourceTree = "<group>"; };
 		179CCDA2280E0CD80007CF9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		179CCDA5280E0CD80007CF9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		179CCDA7280E0CD80007CF9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		179CCDD0280E31D90007CF9A /* DetailViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewViewController.xib; sourceTree = "<group>"; };
 		179CCDD4280E354A0007CF9A /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		179CCDDB280E38D90007CF9A /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		179CCDEE280E42FB0007CF9A /* List.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = List.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,15 +96,14 @@
 		179CCD95280E0CD40007CF9A /* Countries */ = {
 			isa = PBXGroup;
 			children = (
+				179CCDDD280E3BD90007CF9A /* Manager */,
 				179CCDC8280E1CF40007CF9A /* ViewModel */,
 				179CCDC5280E19780007CF9A /* Extension */,
 				179CCDBB280E138A0007CF9A /* View */,
-				179CCDB6280E10090007CF9A /* Service */,
 				179CCDAE280E0E630007CF9A /* Model */,
 				179CCDAD280E0E230007CF9A /* Resources */,
 				179CCD9C280E0CD40007CF9A /* Main.storyboard */,
 				179CCD9A280E0CD40007CF9A /* ViewController.swift */,
-				179CCD9F280E0CD40007CF9A /* Countries.xcdatamodeld */,
 			);
 			path = Countries;
 			sourceTree = "<group>";
@@ -186,6 +185,23 @@
 				179CCDD0280E31D90007CF9A /* DetailViewViewController.xib */,
 			);
 			path = DetailView;
+			sourceTree = "<group>";
+		};
+		179CCDDD280E3BD90007CF9A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				179CCDDE280E3BEE0007CF9A /* CoreData */,
+				179CCDB6280E10090007CF9A /* Service */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		179CCDDE280E3BEE0007CF9A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				179CCDED280E42FB0007CF9A /* List.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,10 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				179CCDD5280E354A0007CF9A /* DetailViewModel.swift in Sources */,
+				179CCDEF280E42FB0007CF9A /* List.xcdatamodeld in Sources */,
 				179CCD9B280E0CD40007CF9A /* ViewController.swift in Sources */,
 				179CCDB0280E0EC30007CF9A /* CountryListModel.swift in Sources */,
 				179CCD97280E0CD40007CF9A /* AppDelegate.swift in Sources */,
-				179CCDA1280E0CD40007CF9A /* Countries.xcdatamodeld in Sources */,
 				179CCDCC280E2FCD0007CF9A /* UITableViewCell+Extensions.swift in Sources */,
 				179CCDC7280E19A00007CF9A /* UIView+Extensions.swift in Sources */,
 				179CCDD1280E31D90007CF9A /* DetailViewViewController.swift in Sources */,
@@ -546,13 +562,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		179CCD9F280E0CD40007CF9A /* Countries.xcdatamodeld */ = {
+		179CCDED280E42FB0007CF9A /* List.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				179CCDA0280E0CD40007CF9A /* Countries.xcdatamodel */,
+				179CCDEE280E42FB0007CF9A /* List.xcdatamodel */,
 			);
-			currentVersion = 179CCDA0280E0CD40007CF9A /* Countries.xcdatamodel */;
-			path = Countries.xcdatamodeld;
+			currentVersion = 179CCDEE280E42FB0007CF9A /* List.xcdatamodel */;
+			path = List.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
